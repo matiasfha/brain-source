@@ -1,0 +1,30 @@
+#+title: Rust
+
+* Un lenguaje para empoderar a todos a construir software confiable y eficiente.
+* Es una alternativa a C++
+* Se puede usar para casi todo, inclyendo web apps con wasm
+* Un objetivo es ser eficiente y tener buen runtime performance
+* Compila como binario, no tiene un GC es como C++
+* Tiene interoperación con C/C++
+* packages, plugin editor, material de aprendizaje
+* Comparado con Go: simple, quick to learn (por diseño), compilador muy rápido
+* Rust es complejo, mucho que aprender, el compilador no es el más rápido ni tampoco su objetivo
+** RustConf 2018 Keynote youtu.be/J9OFQm8Qf1I
+** Incluir a todos y ser transparentes con el desarrollo.
+*** Downsize, puede ser lento y overwhelming: Organizational Debt
+** Tiene varios developers full-time y una buena comunidad
+* Backward compatible: Compiler release cada 6 semanas
+* Rust tiene hasta ahora 6 conferencias. Healthy community (aun más pequeña que su comparación con C/C++)
+* Reliable/Confiabilidad
+** Static type-checking
+** sound type system (si el compilador dice que es el tipo, entonces lo es)
+*** obviamente si se usa interop con C podria no ser cierto
+** No `any` (strict mode)
+** No "billion dolar mistak" (null)
+** Helpful compilers
+** Immutable by default: Pero se permite mutar un valor.
+** Memory safety, no data races
+*** No se permite escribir en partes de la memoria donde no se debería escribir algo que ocurre con C/C++
+*** no data races: El compilador se asegura que solo un valor/element mute a la vez para evitar problemas de escritura/lectura por multiples threads.
+** Esto es importante ocmo identidad: Rápido para competir con C/C++ pero mas seguro
+* If it compiles, it usually works.

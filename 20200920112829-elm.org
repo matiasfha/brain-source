@@ -1,0 +1,30 @@
+#+title: Elm
+* Un lenguaje disfrutante para crear aplicaciones web confiables
+* Puede ser considerado una alternativa a Javascript
+* Se utiliza para construir aplicaciones web
+* Disfrutable: Elm se enfoca en DX y ergonómicos: Gran compilador y mensajes de error
+* Enfocado en un compilador rápdio, friendly
+* Es pequeño y simple
+* JS interop
+* packages, editor plugin, mateiral de aprendizaje
+* Comparado con JS frameworks lo que no es correcto, Elm es un lenguaje, con los frameworks escribes JS/TS
+** Pero Elm tiene todo incluido, no se requiere un framework, Elm es el framework en si mismo.
+* Nacido el 2012 single dev. ahora tiene un Core Team y un BDFL
+** “What is Success?” youtu.be/uGlzRt-FYto (Evan Czaplinsky - creador)
+** 1 full time dev
+** small, simple, release del compilador poco
+* Elm tiene 5 conferencias. Healthy community (Menor que JS)
+* Reliable/Confiabilidad
+** Static type-checking
+** sound type system (si el compilador dice que es el tipo, entonces lo es)
+*** obviamente si se usa interop con C podria no ser cierto
+** No `any` (strict mode)
+** No "billion dolar mistak" (null)
+** Helpful compilers
+*** Incluye mensajes de error que incluso te dicen como reparar el error
+** If it compiles, it usually works.
+** Immutable by default: 100% immutable, pure function language
+** Elm compiled bundle size is one of the smaller
+** No runtime exceptions:
+*** El compilador lo evita gracias al sistema de tipado
+*** Es posible pero demasiado dificil o extraño que ocurra, a menos que exista interop con JS

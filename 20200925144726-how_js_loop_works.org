@@ -1,0 +1,12 @@
+#+TITLE: How JS loop works
+#+CREATED: [2020-09-25 Fri 14:47]
+#+LAST_MODIFIED: [2020-09-25 Fri 14:47]
+
+- source:: https://www.youtube.com/watch?v=cCOL7MC4Pl0&ab_channel=JSConf
+
+* Main Thread
+** The DOM happens, render happens
+** Deterministic order
+** Long tasks blocks all the thread > We don't want to write code that is like a sneez - Jake Archibald
+* The Event Loop
+** setTimeout definition is "Run the steps in parallel" and wiat ms and invoke callback

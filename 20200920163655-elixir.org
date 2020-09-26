@@ -1,0 +1,14 @@
+#+title: Elixir
+
+* Nacido el 2011 por José Valim, parte del equipo Core de RoR
+* Un lenguaje dynámico y funcional para construir aplicaciones escalables yu mantenibles
+* Toma el poder de la VM Erlang conocida por ejecutar sistemas distribuidos de baja latencia
+* Se utiliza para desarrolo web, software embebido, procesamiento multimedia, ena
+* Enfocado en Escalabilidad, tolerancia a fallo y concurrencia
+* Completamente funcional
+* 100% Immutable
+* Incluye extensibilidad mendiante el uso de un DSL
+* REPL y manejador de paquetes
+* Compatible con Erlang
+* Tiene una comunidad activa y una gran conferencia llama ElixirConf en total hay 13 grandes eventos a nivel mundial.
+**
