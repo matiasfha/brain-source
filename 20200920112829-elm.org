@@ -1,4 +1,7 @@
 #+title: Elm
+#+HUGO_BASE_DIR: /Users/matias/Development/matiasfha/brain/
+#+HUGO_SECTION: notes
+
 * Un lenguaje disfrutante para crear aplicaciones web confiables
 * Puede ser considerado una alternativa a Javascript
 * Se utiliza para construir aplicaciones web

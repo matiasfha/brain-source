@@ -1,0 +1,8 @@
+#+TITLE: 2020-09-23
+- tags:: [[file:../20200923103808-meetings.org][Meetings]]
+* meeting with Trevor about RN project
+** contract until the end of the year
+** just one platform to target
+** 2 frontends, 1 architect, one QA, one Scrum master
+** is an MVP
+** use android emulator

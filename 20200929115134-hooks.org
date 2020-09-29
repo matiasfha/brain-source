@@ -1,0 +1,20 @@
+#+TITLE: Hooks
+#+CREATED: [2020-09-29 Tue 11:51]
+#+LAST_MODIFIED: [2020-09-29 Tue 11:51]
+#+HUGO_BASE_DIR: ~/Development/matiasfha/brain
+#+HUGO_SECTION: notes
+
+ - tags :: [[file:20200929103149-react.org][React]]
+ - link: https://matiashernandez.dev/que-son-los-hooks
+** ¿Qué son los hooks?
+:PROPERTIES:
+:ID:       10ea5dd6-0a8c-4805-a19d-29a0aa249120
+:END:
+En términos sencillos y directos son funciones. React otroga algunas funciones base que te, cuando las utilizas dentro de tu componente te permiten acceder a algunos de los procesos internos de react como el manejo del estado.
+
+Esta api nació como solución para algunos de los problemas que React presentaba a la hora de escribir componentes usando la sintaxis de clases, algunos de estos:
+- Componentes gigantes
+- No hay estado en componentes funcionales
+- Las clases pueden ser confusas
+
+Hooks otorga el poder de los ciclos de vida del componente utilizados en las clases pero por medio de sencilla funciones permitiendo que tus componentes funcionales utilicen estado y efectos. Importante destacar que **hooks no son un reemplazo directo de los ciclos de vida del componente***.

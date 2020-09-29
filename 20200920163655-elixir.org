@@ -1,4 +1,6 @@
 #+title: Elixir
+#+HUGO_BASE_DIR: ~/Development/matiasfha/brain
+#+HUGO_SECTION: notes
 
 * Nacido el 2011 por José Valim, parte del equipo Core de RoR
 * Un lenguaje dynámico y funcional para construir aplicaciones escalables yu mantenibles
@@ -11,4 +13,3 @@
 * REPL y manejador de paquetes
 * Compatible con Erlang
 * Tiene una comunidad activa y una gran conferencia llama ElixirConf en total hay 13 grandes eventos a nivel mundial.
-**

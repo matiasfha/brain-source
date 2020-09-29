@@ -1,3 +1,0 @@
-#+TITLE: Podcast Episode
-#+CREATED: [2020-09-23 Wed 15:15]
-#+LAST_MODIFIED: [2020-09-23 Wed 15:15]

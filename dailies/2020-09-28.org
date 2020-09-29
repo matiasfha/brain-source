@@ -1,0 +1,10 @@
+#+TITLE: 2020-09-28
+- tags:: [[file:../20200929101102-gatsby.org][Gatsby]]
+* org to gatsby flow
+- export with ox-hugo to ``brain/content/notes`
+- make `notes` as the git directory
+- use `notes` as git submodule inside gatsby site
+- use git-sync to daily sync notes to github
+- use some cron or build job (webhook?) to update submodule and trigger build
+- use gatsby-brain-theme to have stacked notes
+- gatsby should load this notes in a differet subfolder

@@ -1,0 +1,57 @@
+#+TITLE: Typescript
+#+CREATED: [2020-09-26 Sat 23:58]
+#+LAST_MODIFIED: [2020-09-26 Sat 23:58]
+#+HUGO_BASE_DIR: /Users/matias/Development/matiasfha/brain/
+#+HUGO_SECTION: notes
+- tags:: [[file:20200927000334-programing_languages.org][PrograminG Languages]]
+- sources:: https://serokell.io/blog/why-typescript
+
+* Typed [[file:20200927000418-javascript.org][Javascript]] at any scale
+:PROPERTIES:
+:ID:       05f32699-04b3-48a7-a61c-0d249d9b985a
+:END:
+* Extend Javascript by adding types
+- Is a super set of Javascript that has optional typing and compiles to plain Javascript
+Es javascript con algunas funciones extras incluyendo tipos estáticos de forma opcional
+Esto permite
+- evitar errores tipo "undefined is not a function"
+- Tener tipos ayuda a los refactorings
+- Documentación que en grandes proyectos ayuda mucho a orientarse
+ a study shows that 15% of all JavaScript bugs can be detected by TypeScript.
+  + the study http://earlbarr.com/publications/typestudy.pdf
+
+- Se puede definir Typescript como un Linter
+- No es neceario saber nada en particular para comenzar con TS
+  + Tipos son opcionales en TS
+  + Todo el JS es TS válido
+* Types
+- describing in our code how we plan to use our data
+- from simple types like Number and String to complex structures perfectly modeled for our problem domain.
+- [[file:20200927001713-tipos_estaticos_vs_tipos_dinamicos.org][Tipos estaticos vs tipos dinamicos]]
+- *Typescript te fuerza a pensar más en tus datos
+*** Evita que se introduzcan variables indefinidas
+- Evitar coerción de datos (como la suma de numeros con strings)
+- Evitar operaciones en tipos erroneos, como hacer "trim" en un número.
+- Los tipos estáticos invitan a crear tipos personalizados
+
+Los tipos sirven como documentación algo que los editores aprovechan para mostrar información de los métodos y variables mientras se desarrolla
+- Tiene varios tipos básicos como: Boolean, Number, String, Array, Typle, etc
+- Algunos no existen en JS: mas info: https://www.typescriptlang.org/docs/handbook/basic-types.html
+*** Any & Unknown:
+**** Any para "todo tipo": Sirve como escape-hatch
+***** Normalmente usado para modelar datos de librerias externas sin tipar
+**** unknown para desconosido. Type safe
+***** No permite ejcutar operaciones sobre la variable hasta que el tipo sea revisao por ejemplo al usar `typeof` o `instanceof`
+*** Void: usado cuano no hay valor de retorno
+*** Never: Tipo de dato emitido por funciones que no deberian ocurrir, ej: Throw an exception
+*** Intersection & Union type
+Permite crear tipos personalizados adecuados para el dominio particular.
+**** Intersection
+Permite unir varios tipos básicos en un solo tipo.
+Equivalente a un "and"
+**** Union
+Equivalente a un "or"
+Permite a la variable tomar uno de varios tipos
+    #+begin_src typescript-mode
+const result: string | undefined = undefined
+    #+end_src

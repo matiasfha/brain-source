@@ -1,0 +1,11 @@
+#+TITLE: Index
+#+CREATED: [2020-09-27 Sun 00:17]
+#+LAST_MODIFIED: [2020-09-27 Sun 00:17]
+#+HUGO_BASE_DIR: /Users/matias/Development/matiasfha/brain/
+#+HUGO_SECTION: notes
+
+- [[file:20200929115119-custom_react_hooks.org][Custom React Hooks]]
+- [[file:20200921094409-progressive_summarization.org][Progressive Summarization]]
+- [[file:dailies/2020-09-27.org][Time Management]]
+- [[file:20200925021631-how_to_take_smart_notes.org][How to take smart notes]]
+- [[file:20200927000334-programing_languages.org][Programing Languages]]

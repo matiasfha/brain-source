@@ -1,0 +1,48 @@
+#+TITLE: DELETE
+#+HUGO_BASE_DIR: ~/Development/matiasfha/brain
+#+HUGO_SECTION: notes
+
+Que es? Este concepto se refiere a las decisiones que realizas durante el dia a día .
+- Que necesitas hacer
+- Cuando necesitas hacerlo
+- Cuando necesitas terminar
+- Que tareas necesitas atacar para obtener tus objetivos
+Poder realizar tareas de alto valor, de alta prioridad y conseguirlo antes de cierto deadline y al mismo tiempo vivir una vida saludable tanto mental como fisicamente, puedes decir que manejaste tu tiempo de gran manera, pero? Como se consigue esto?
+* Time Management skills
+** Son un grupo de reglas, ideas o principios que se requiere seguir para ser más productivo y eficiente con el tiempo que se dispone.
+- hacer mejoras y más rápidas decidiones
+- Realizar mejores predicciones de tu disponibilidad
+- Disminuir el stress
+- Y Ojalá poder hace más en menos tiempo y con menos esfuerzo
+** En general estas tecnicas utilizan algunos principios básicos que probablemente todos conocemos
+- Escribir lo que necesitas hacer durante el día
+- Trabajar en la tarea mas dificil o de mayor prioridad primero
+- Manejo del stress
+- Manejo de la ansiedad
+- Manejo del equipo
+- Comunicación
+- Tracking del progreso del proyecto
+** La mayoría de las técnicas trabajan con uno o más de los puntos listados
+*** Puedes elehir uno de las técnicas en base a tu workflow y que quieres mejorar
+*** O incluso crear tu propio método en base de ellas
+ Este es otro tópico importante a la hora de manejar tu tiempo y aplicar alguna de las técnicas disponibles.
+ Algunas de estos skills son:
+- Crear objetivo SMART: Specific, Measurable, Attainable, Relevant and Time-bound
+- Effective Planning: Objetivos claros, tareas definidas y recursos  para hacer el camino más claro (aquí entra también el manejo del conocimiento)
+- Stress management: Tener ideas de como manejar el estress para estar más enfocado en el trabajo y en la vida en general (Ejercicio, Meditar, Leer, Yoga - Experiencia Yoga Chari)
+- Task Delegation: Delegar tareas ayuda a disminuir la carga de trabajo y responsabilidad pero es algo que hay que poner en práctica y confiar en otros.
+- Evitar distracciones: Procastinar es fácil, más aun con RRSS. Hay que tener habilidades y herramientas para evitar estas distracciones (Habitos atómicos, The Social Dillema)
+- Una sola tarea: Los humanos somos muy buenos para intentar hacer múltiples tareas, pero lamentablemente no somos buenos realmente haciendolo. Aprender a enfocarse en sólo una tarea ayuda a obtener mejores resultados en menor tiempo.
+- Decir que NO: Es necesario aprender a decir que no (experiencias personales)
+- Definir prioridades: Trabajar en tareas de alta importancia o en la tarea correcta te permitirá obtener mejores resultados en menos tiempo o con menos esfuerzo (El principio de Paretto)
+
+  Estos skills son escenciales para mejorar tus capacidades de manejo del tiempo y aplicar algunas de estas técnicas de forma exitosa
+
+** Time management styles
+Todos trabajamos de maneras diferentes por lo que no todas las técnicas de manejo de tiempo no pueden aplicarse a todos, cada uno tiene alguna tendencia hacia una u otra tecnica, en general podemos describir estos estilos en algunas categorías
+- Martir: LLena su tiempo con solicitudes de otros en vez de enfocarse en sus propias tareas o responsabilidades. y deja de lado tareas que te dan auto-validación. Problemas. multi-tasking, missid deadlines, skipping breaks
+- Procastinador: Evita el trabajo a toda costa
+- Distractor: Trata enormemente enfocarse pero fácilmente se distrae con tareas cotidianas o requerimientos externos (esto en el trabajo remoto puede ser demoledor)
+- Understimator: Siempre cree que una tarea tomará menos que lo realmente posible, rara vez logra los optimistas objetivos. Deadlines son su mayor problema
+- Bombero: Realmente un multitasker que trata de resolver todo a cada instante. Se la pasa apagando incendios. Siempre busca sentirse ocupado. Esta al borde del burnout.
+- Perfeccionista: La inhabilidad para terminar una tarea viene dada por la idea de que siempre falta algo, que todo debe ser perfecto

@@ -1,0 +1,34 @@
+#+TITLE: Video: Clojure Made Simple
+#+CREATED: [2020-09-28 Mon 18:13]
+#+LAST_MODIFIED: [2020-09-28 Mon 18:13]
+#+HUGO_BASE_DIR: ~/Development/matiasfha/brain
+#+HUGO_SECTION: notes
+- tags:: [[file:20200922032244-clojure.org][Clojure]][[file:20200927000334-programing_languages.org][Programing Languages]]
+- source:: https://youtu.be/VSdnJDO-xdg
+- author:: Rich Hickey
+
+#+begin_quote
+"A lot of the best programmer and the most productive programmers I know are writing everything in Clojure and swearing by it, and then just producing ridiculously sophisticated things in a very short time.
+And the programmer productiviy matters."
+Adrian Cockroft
+http://thenewstack.io/the-new-stack-makers-andrian-cockcroft-on-sun-netflix-clojure-go-docker-and-more
+#+end_quote
+
+* Programming is an Economic Activity
+:PROPERTIES:
+:ID:       220f840e-114b-4107-ad3b-7d042c0df662
+:END:
+Que quieren los stackholders: Algo bueno y pronto.
+- Algo bueno: Va más allá de las consideraciones de "correción" del equipo de desarrollo (tests, types, etc)
+  Muchas veces tests no son suficiente para definir algo bueno: que funcione desde el punto de vista de los stakeholders
+- Flexibilidad
+- Que haga lo que se supone que debe hacer: Perspectiva de los stakeholders
+  + Es dificil saber si un gran codebase hace lo que se supone que debe hacer "dificil de seguir o razonar su estado".
+  + Clojure intenta resolver esto siendo un conjunto pequeño y funcional
+- Requerimientos operacionales: Adoptar Clojure es "simple" dado que todo el proceso de "hostearlo" ya esta resuelto.
+  + Corre en la JVM - un simple jar más
+  + Corre en el browser: Un bundle de JS
+  + Lo que es verdad para la JVM o el browser lo es para Clojure (Pero a la hora de desarrollar Clojure ofrece más valor )
+  + Es suficientemente rápido en la JVM, pero en el browser tiene una gran performance utilizando[[file:20200929103110-om.org][ Om]]
+
+** How

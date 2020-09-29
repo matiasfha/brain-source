@@ -1,0 +1,11 @@
+#+TITLE: Programing Languages
+#+CREATED: [2020-09-27 Sun 00:03]
+#+LAST_MODIFIED: [2020-09-27 Sun 00:03]
+#+HUGO_BASE_DIR: /Users/matias/Development/matiasfha/brain/
+#+HUGO_SECTION: notes
+- [[file:20200920163655-elixir.org][Elixir]]
+- [[file:20200927000418-javascript.org][Javascript]]
+- [[file:20200926235811-typescript.org][Typescript]]
+- [[file:20200922032244-clojure.org][Clojure]]
+- [[file:20200920112829-elm.org][Elm]]
+- [[file:20200920112816-rust.org][Rust]]

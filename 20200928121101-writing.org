@@ -1,0 +1,5 @@
+#+TITLE: Writing
+#+CREATED: [2020-09-28 Mon 12:11]
+#+LAST_MODIFIED: [2020-09-28 Mon 12:11]
+#+HUGO_BASE_DIR: ~/Development/matiasfha/brain
+#+HUGO_SECTION: notes

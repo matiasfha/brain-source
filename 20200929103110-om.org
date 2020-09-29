@@ -1,0 +1,11 @@
+#+TITLE: Om
+#+CREATED: [2020-09-29 Tue 10:31]
+#+LAST_MODIFIED: [2020-09-29 Tue 10:31]
+#+HUGO_BASE_DIR: ~/Development/matiasfha/brain
+#+HUGO_SECTION: notes
+
+ - tags :: [[file:20200922032244-clojure.org][Clojure]], [[file:20200929103149-react.org][React]]
+
+ Om es una libraria escrita con [[file:20200929103214-clojurescript.org][ClojureScript]] que básicamente "wraps" React y tiene una mejor perfomance.
+ - ¿Por qué? Por que utiliza estructuras de datos inmutables lo que permite que la comparación de estados que React hace sea muy rápida.
+   La comparación de dos estructuras inmutables es solo por identidad/referencia. Fast

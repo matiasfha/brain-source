@@ -1,0 +1,67 @@
+#+Title: Typescript 4.0
+#+CREATED: [2020-09-27 Sun 00:01]
+#+LAST_MODIFIED: [2020-09-27 Sun 00:01]
+- tags:: [[file:20200926235811-typescript.org][Typescript]]
+- source:: https://www.youtube.com/watch?v=bAB_nNf8-a0
+
+** No breaking changes
+No hay cambios que rompan algo
+** Typescript no usa semver
+** Variadic Typle Types
+Esto es lo nuevo
+La idea es que Typescript pueda inferir
+Nueva sintaxis
+#+BEGIN_SRC typescript
+function oldConcat<T,U>(arr1: T[], arr2: U[]): Array<T | U> {
+    return [...arr1, ...ar2]
+}
+
+function concat<T extends Arr, U extends Arr>(arr1 T, arr2: U) : [...T, ...U] {
+    return [...arr1, ...arrr2]
+}
+#+END_SRC
+
+*** new concat return a tutple con todos los tipos de los elementos
+** Tuples ahora proveed labels
+*** Util para agregar labels en los tipos de retornos
+** Class Property Inference from Constructor
+Ahora se puede usar analisis de control de flujo para determinar el tipo de propiedades en clases when `noImplicitAny` esta activado
+
+#+BEGIN_SRC typescript
+class Square {
+    // Previously: implicit any!
+    // Now: inferred to number
+    area;
+    sideLength;
+    constructor(sideLength: number) {
+        this.sideLength = sideLength;
+        this.area = sideLength ** 2;
+    }
+}
+#+END_SRC
+*** No hay que agregar los tipos explicitos en las propieades
+** Nuevos operadores
+#+BEGIN_SRC  typescript
+&&=
+||=
+??=
+//sustitutos
+a = a && b;
+a = a || b;
+a = a ?? b;
+
+// Algunos patrones
+let values: string[];
+// Before
+(values ?? (values = [])).push('Hello')
+// Now
+(values ??= []).push('Hello')
+#+END_SRC
+
+** Unknown on catch Clause bindings
+ Dentro del catch del bloque try catch(x) tiene tipo any
+ Ahora `catch(x: unknown)` forzando a hacer `typeof` o hacer un `cast` en el tipo
+
+** Mejoras de performance del build con  `--noEmitError`
+** Partial Editing Mode al inicio - Mejora la velocidad en que tsserver parsea los archivos al cargarlos en el editor (VSCode)
+** Mejor Auto-Imports

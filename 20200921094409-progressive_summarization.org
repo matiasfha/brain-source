@@ -1,5 +1,13 @@
 #+title: Progressive Summarization
-- tag::
+#+HUGO_BASE_DIR: /Users/matias/Development/matiasfha/brain/
+#+HUGO_SECTION: notes
+- tags:: [[file:20200928121101-writing.org][Writing]]
 
 * Is a way to makes notes progressively useful
-** every time you come back to a note you do a review steps and highlight pieces of it
+every time you come back to a note you do a review steps and highlight pieces of it
+
+* Footnotes
+* COMMENT Local Variables                          :ARCHIVE:
+# Local Variables:
+# eval: (org-hugo-auto-export-mode)
+# End:

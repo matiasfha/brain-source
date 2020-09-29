@@ -1,4 +1,7 @@
 #+title: Clojure
+#+HUGO_BASE_DIR: /Users/matias/Development/matiasfha/brain/
+#+HUGO_SECTION: notes
+- tags:: [[file:20200927000334-programing_languages.org][Programing Languages]]
 * Nacido el 2007, actualmente mantenido por Cognitect con 126 contributors formales
 * Un lenguaje robusto, practico y rápido con caracterísiticas para forma una herramienta simple, coherente y poderosa.
 * De propósito general,

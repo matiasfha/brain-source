@@ -1,0 +1,9 @@
+#+TITLE: Tipos estaticos vs tipos dinamicos
+#+CREATED: [2020-09-27 Sun 00:17]
+#+LAST_MODIFIED: [2020-09-27 Sun 00:17]
+#+HUGO_BASE_DIR: /Users/matias/Development/matiasfha/brain/
+#+HUGO_SECTION: notes
+
+- Tipos estático requieren que el tipo de la variable este disponible en tiempo de compilación, declarada o inferida
+- Dinámicos el tipo de la variable es conocido solo en tiempo de ejecución como Python
+- Video: https://www.youtube.com/watch?v=C5fr0LZLMAs
