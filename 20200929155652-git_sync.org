@@ -1,0 +1,54 @@
+#+TITLE: git-sync
+#+CREATED: [2020-09-29 Tue 15:56]
+#+LAST_MODIFIED: [2020-09-29 Tue 15:56]
+#+HUGO_BASE_DIR: ~/Development/matiasfha/brain
+#+HUGO_SECTION: notes
+
+ - tags :: [[file:20200929155543-git.org][Git]]
+
+* auto sync a folder tracked by git
+Using https://github.com/simonthum/git-sync/blob/master/git-sync and cron jobs I can sync my notes folder with my github repo at https://github.com/matiasfha/brain-source
+
+** Como?
+- Bajar git-sync con wget
+- dar permisos a git-sync `chmod +x /usr/local/bin/git-sync`
+- crear un script para ejecutarlo
+ #+begin_src:bash
+ #/bin/bash
+ cd ~/Resources/org-roam
+ /usr/local/bin/git-sync
+ #+end_src
+- crear un archivo `plist` dentro de  `~/Librar/LaunchAgents`
+  #+begin_src:xml
+  <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.alvin.crontabtest</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/al/bin/crontab-test.sh</string>
+  </array>
+
+  <key>Nice</key>
+  <integer>1</integer>
+
+  <key>StartInterval</key>
+  <integer>86400</integer>
+
+  <key>RunAtLoad</key>
+  <true/>
+
+  <key>StandardErrorPath</key>
+  <string>/tmp/AlTest1.err</string>
+
+  <key>StandardOutPath</key>
+  <string>/tmp/AlTest1.out</string>
+</dict>
+</plist>
+  #end_src
+
+ - ejecutar el agent  `launchctl load com.alvin.crontabtest.plist`
+ - El plist dice 86400 que es el intervalo en segundos para ejecutar este script (diario)

@@ -1,0 +1,8 @@
+#+TITLE: 20200929155543 Git
+#+TITLE: Git
+#+CREATED: [2020-09-29 Tue 15:55]
+#+LAST_MODIFIED: [2020-09-29 Tue 15:55]
+#+HUGO_BASE_DIR: ~/Development/matiasfha/brain
+#+HUGO_SECTION: notes
+
+ - tags :: [[file:20200929155550-git.org][Git]]
