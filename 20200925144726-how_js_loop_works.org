@@ -1,8 +1,7 @@
 #+TITLE: How JS loop works
 #+CREATED: [2020-09-25 Fri 14:47]
 #+LAST_MODIFIED: [2020-09-25 Fri 14:47]
-#+HUGO_BASE_DIR: /Users/matias/Development/matiasfha/brain/
-#+HUGO_SECTION: notes
+#+HUGO_BASE_DIR: /Users/matias/Development/matiasfha/braindump.matiashernandez.dev/
 
 - source:: https://www.youtube.com/watch?v=cCOL7MC4Pl0&ab_channel=JSConf
 

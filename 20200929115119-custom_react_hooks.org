@@ -1,8 +1,7 @@
 #+TITLE: Custom React Hooks
 #+CREATED: [2020-09-29 Tue 11:51]
 #+LAST_MODIFIED: [2020-09-29 Tue 11:51]
-#+HUGO_BASE_DIR: ~/Development/matiasfha/brain
-#+HUGO_SECTION: notes
+#+HUGO_BASE_DIR: ~/Development/matiasfha/braindump.matiashernandez.dev
 
  - tags :: [[file:20200929103149-react.org][React]] [[file:20200929115134-hooks.org][Hooks]]
 
@@ -37,7 +36,7 @@ Podemos revisar otro ejemplo, más sencillo pero no menos interesante.
 Digamos que quieres cambiar el titulo de tu documento HTML con algún valor del estado de un componente, para esto necesitas hacer uso del hook `useEffect` que - ** recuerda: no es un reemplazo para los métodos del ciclo de vida usados en las clases ** - sincroniza el estado interno del componente con algún estado externo, es decir, ejecuta algún efecto.
 El código para este componente podría ser algo asi:
 
-#+begin_src:jxs
+#+begin_src jsx -n
 const PostPage = ({ title, data, footer }) => {
     React.useEffect(() => {
         document.title = title
@@ -55,7 +54,7 @@ const PostPage = ({ title, data, footer }) => {
 Este es un sencillo componente que renderiza el contenido de un "post" y define el título de la página como el título del post. Para esto utiliza `useEffect` que ejecuta el callback definido: cambiar el título del documento, cada vez que la prop `title` cambia.
 
 Ahora, esta es una tarea común - cambiar el título documento - que también se realiza en la sección videos, about, etc. Entonces tiene sentido querer extraer esta lógica. Para eso creamos un nuevo hook:
-#+begin_src:javascript
+#+begin_src javascript -n
 const useUpdateDocumentTitle = (title) => {
     React.useEffect(() => {
         document.title = title
@@ -65,7 +64,7 @@ const useUpdateDocumentTitle = (title) => {
 
 Ahora podemos guardar este nuevo hook en un modulo diferente, llamemoslo `hooks.js` y al volver a nuestro componente `PostPage` lo refactorizamos para que utilice nuestro grandioso hook
 
-#+begin_src:jxs
+#+BEGIN_SRC jsx -n
 const PostPage = ({ title, data, footer }) => {
     useUpdateDocumentTitle(title)
     return (
@@ -76,7 +75,7 @@ const PostPage = ({ title, data, footer }) => {
         </article>
     )
 }
-#+end_src
+#+END_SRC
 
 Como vez, extraer lógica compartida y crear una simple abstracción utilizando una función que contenga esta lógica junto con los hooks correspondientes es relativamente sencillo.
 Primero, debes identificar la lógica que se requiere reutilizar, luego extraer y refactorizar tu componente para que haga uso del nuevo hook.

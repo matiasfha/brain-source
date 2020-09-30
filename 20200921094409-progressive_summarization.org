@@ -1,6 +1,5 @@
 #+title: Progressive Summarization
-#+HUGO_BASE_DIR: /Users/matias/Development/matiasfha/brain/
-#+HUGO_SECTION: notes
+#+HUGO_BASE_DIR: /Users/matias/Development/matiasfha/braindump.matiashernandez.dev
 - tags:: [[file:20200928121101-writing.org][Writing]]
 
 * Is a way to makes notes progressively useful

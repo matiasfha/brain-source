@@ -1,6 +1,7 @@
 #+Title: Typescript 4.0
 #+CREATED: [2020-09-27 Sun 00:01]
 #+LAST_MODIFIED: [2020-09-27 Sun 00:01]
+#+HUGO_BASE_DIR: /Users/matias/Development/matiasfha/braindumpmatiashernandez.dev/
 - tags:: [[file:20200926235811-typescript.org][Typescript]]
 - source:: https://www.youtube.com/watch?v=bAB_nNf8-a0
 

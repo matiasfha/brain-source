@@ -4,7 +4,7 @@
 #+HUGO_BASE_DIR: ~/Development/matiasfha/brain
 #+HUGO_SECTION: notes
 
- - tags :: [[file:20200929155543-git.org][Git]]
+ - tags ::[[file:20200929161650-git.org][Git]]
 
 * auto sync a folder tracked by git
 Using https://github.com/simonthum/git-sync/blob/master/git-sync and cron jobs I can sync my notes folder with my github repo at https://github.com/matiasfha/brain-source

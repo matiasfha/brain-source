@@ -1,7 +1,8 @@
 #+title: Podcast: Overview modern languages
 #+CREATED: [2020-22-08 Tue]
 #+LAST_UPDATED: [2020-23-08 Wed]
-- tags:: [[file:20200920112816-rust.org][Rust]] [[file:20200920112829-elm.org][Elm]] [[file:20200922032244-clojure.org][Clojure]] [[file:20200920163655-elixir.org][Elixir [[file:20200923151527-podcast_episode.org][Podcast Episode]]]]
+#+HUGO_BASE_DIR: ~/Development/matiasfha/matiashernandez.dev
+- tags:: [[file:20200920112816-rust.org][Rust]] [[file:20200920112829-elm.org][Elm]] [[file:20200922032244-clojure.org][Clojure]] [[file:20200920163655-elixir.org][Elixir]]
 
 
 * Nueva idea para una charla: Overview de Rust y Elm como lenguajegs modernos

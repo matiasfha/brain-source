@@ -1,5 +1,4 @@
 #+TITLE: Javascript
 #+CREATED: [2020-09-27 Sun 00:04]
 #+LAST_MODIFIED: [2020-09-27 Sun 00:04]
-#+HUGO_BASE_DIR: /Users/matias/Development/matiasfha/brain/
-#+HUGO_SECTION: notes
+#+HUGO_BASE_DIR: /Users/matias/Development/matiasfha/braindump.matiashernandez.dev/

@@ -1,8 +1,7 @@
 #+TITLE: How to take smart notes
 #+CREATED: [2020-09-25 Fri 02:16]
 #+LAST_MODIFIED: [2020-09-25 Fri 02:16]
-#+HUGO_BASE_DIR: /Users/matias/Development/matiasfha/brain/
-#+HUGO_SECTION: notes
+#+HUGO_BASE_DIR: /Users/matias/Development/matiasfha/braindump.matiashernandez.dev
 - tags: [[file:20200928121101-writing.org][Writing]]
 * Introduction
 ** every intellectual endeavour starts with a note.

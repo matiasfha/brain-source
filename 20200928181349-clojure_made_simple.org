@@ -1,8 +1,7 @@
 #+TITLE: Video: Clojure Made Simple
 #+CREATED: [2020-09-28 Mon 18:13]
 #+LAST_MODIFIED: [2020-09-28 Mon 18:13]
-#+HUGO_BASE_DIR: ~/Development/matiasfha/brain
-#+HUGO_SECTION: notes
+#+HUGO_BASE_DIR: ~/Development/matiasfha/braindump.matiashernandez.dev
 - tags:: [[file:20200922032244-clojure.org][Clojure]][[file:20200927000334-programing_languages.org][Programing Languages]]
 - source:: https://youtu.be/VSdnJDO-xdg
 - author:: Rich Hickey

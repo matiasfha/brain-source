@@ -1,1 +1,2 @@
 #+title: Scala
+#+HUGO_BASE_DIR: /Users/matias/Development/matiasfha/braindump.matiashernandez.dev/

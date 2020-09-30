@@ -1,0 +1,11 @@
+#+TITLE: Article: Knowledge Adventure Club
+#+CREATED: [2020-09-30 Wed 01:04]
+#+LAST_MODIFIED: [2020-09-30 Wed 01:04]
+#+HUGO_BASE_DIR: ~/Development/matiasfha/braindump.matiashernandez.dev
+
+ - tags:: [[file:20200930010534-adventure_club.org][Adventure Club]]
+ - source :: https://joelhooks.com/knowledge-adventure-club
+
+
+- Son la intersección de un club de lectura y "D&D"
+[[https://d33wubrfki0l68.cloudfront.net/896e5217845e17eed4d437a612e878278d97d0ba/3eb55/static/38830c298792f559cda80665cbdf05ad/cafa5/knowledge-adventure-club.png]]

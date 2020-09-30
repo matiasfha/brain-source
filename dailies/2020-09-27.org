@@ -1,6 +1,5 @@
-#+TITLE: DELETE
-#+HUGO_BASE_DIR: ~/Development/matiasfha/brain
-#+HUGO_SECTION: notes
+#+TITLE: Time Management
+#+HUGO_BASE_DIR: ~/Development/matiasfha/braindump.matiashernandez.dev
 
 Que es? Este concepto se refiere a las decisiones que realizas durante el dia a día .
 - Que necesitas hacer

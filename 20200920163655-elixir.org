@@ -1,6 +1,5 @@
 #+title: Elixir
-#+HUGO_BASE_DIR: ~/Development/matiasfha/brain
-#+HUGO_SECTION: notes
+#+HUGO_BASE_DIR: ~/Development/matiasfha/braindump.matiashernandez.dev
 
 * Nacido el 2011 por José Valim, parte del equipo Core de RoR
 * Un lenguaje dynámico y funcional para construir aplicaciones escalables yu mantenibles

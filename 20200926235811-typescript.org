@@ -1,8 +1,7 @@
 #+TITLE: Typescript
 #+CREATED: [2020-09-26 Sat 23:58]
 #+LAST_MODIFIED: [2020-09-26 Sat 23:58]
-#+HUGO_BASE_DIR: /Users/matias/Development/matiasfha/brain/
-#+HUGO_SECTION: notes
+#+HUGO_BASE_DIR: /Users/matias/Development/matiasfha/braindump.matiashernandez.dev/
 - tags:: [[file:20200927000334-programing_languages.org][PrograminG Languages]]
 - sources:: https://serokell.io/blog/why-typescript
 

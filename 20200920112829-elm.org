@@ -1,6 +1,5 @@
 #+title: Elm
-#+HUGO_BASE_DIR: /Users/matias/Development/matiasfha/brain/
-#+HUGO_SECTION: notes
+#+HUGO_BASE_DIR: ~/Development/matiasfha/braindump.matiashernandez.dev
 
 * Un lenguaje disfrutante para crear aplicaciones web confiables
 * Puede ser considerado una alternativa a Javascript

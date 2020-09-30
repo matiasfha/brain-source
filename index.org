@@ -1,8 +1,7 @@
 #+TITLE: Index
 #+CREATED: [2020-09-27 Sun 00:17]
 #+LAST_MODIFIED: [2020-09-27 Sun 00:17]
-#+HUGO_BASE_DIR: /Users/matias/Development/matiasfha/brain/
-#+HUGO_SECTION: notes
+#+HUGO_BASE_DIR: /Users/matias/Development/matiasfha/matiashernandez.dev
 
 - [[file:20200929115119-custom_react_hooks.org][Custom React Hooks]]
 - [[file:20200921094409-progressive_summarization.org][Progressive Summarization]]
