@@ -1,0 +1,93 @@
+#+TITLE: Article: Building a Discord bot with Rust
+#+CREATED: [2020-10-02 Fri 08:36]
+#+LAST_MODIFIED: [2020-10-02 Fri 08:36]
+#+HUGO_BASE_DIR: ~/Development/matiasfha/braindump.matiashernandez.dev
+
+ - tags:: [[file:20200920112816-rust.org][Rust]]
+ - source :: https://developers.facebook.com/blog/post/2020/09/30/build-discord-bot-with-rust-and-serenity/
+
+   Will build a Discord bot using Rust and [serenity](https://github.com/serenity-rs/serenity)
+
+- Serenetiy is a Rust library to build discord bots.
+
+* What we will build?
+A simple bot that will accept one command `help` and will respond with
+- What channel to post in for technical help
+- Where to find the code of conduct
+- How to get in touch with admins of the server
+
+* Dependencies
+- [tokio](https://l.facebook.com/l.php?u=https%3A%2F%2Fcrates.io%2Fcrates%2Ftokio&h=AT1FprJVwixKN4IEBeNv6alCPW0CsTWtqpOu3ONhhF0SQq_g6-isq7oW7g8raBuRmxAEzq6z3JaYoqfKtdpKW-jsQz_YGLUPemR4CIZEvUtuSQFF-zh2BBiNGRmwdpJMQLSN-3nhs_CSCQ) - “A runtime for writing reliable, asynchronous and slim applications with the Rust programming language”
+- [serenity](https://l.facebook.com/l.php?u=https%3A%2F%2Fcrates.io%2Fcrates%2Fserenity&h=AT2_NcyFUSLkqD-g3dSFprE3VK9L_pyX736N8b_8-6yvHFq3JYYTDJvGtMiaWJ-wL0AXDrt1wdySJzVHowVNK7DZ3eybtCySVDtgtdJXOieWD25xsXmsVaKgYF1NnnVxqV_vNl0DU6P-JQ) - “a Rust library for the Discord API”
+
+  Add it to `cargo.toml`
+  #+BEGIN_SRC toml
+[dependencies]
+tokio = { version = "0.2", features = ["macros"] }
+serenity = { default-features = false, features = ["client", "gateway", "model",
+"rustls_backend"], version = "0.9.0-rc.1"}
+  #+END_SRC
+
+* Let's get started
+- Create the `main.rs` file and add the base logic
+ #+BEGIN_SRC rust
+use std::env;
+
+use serenity::{
+async_trait,
+model::{channel::Message, gateway::Ready},
+prelude::*,
+};
+
+const HELP_MESSAGE: &str = "
+Hello there, Human!
+
+You have summoned me. Let's see about getting you what you need.
+
+? Need technical help?
+=> Post in the <#CHANNEL_ID> channel and other humans will assist you.
+
+? Looking for the Code of Conduct?
+=> Here it is: <https://opensource.facebook.com/code-of-conduct>
+
+? Something wrong?
+=> You can flag an admin with @admin
+
+I hope that resolves your issue!
+-- Helpbot
+
+";
+
+const HELP_COMMAND: &str = "!help";
+
+struct Handler;
+
+#[async_trait]
+impl EventHandler for Handler {
+    async fn message(&self, ctx: Context, msg: Message) {
+        if msg.content == HELP_COMMAND {
+            if let Err(why) = msg.channel_id.say(&ctx.http, HELP_MESSAGE).await {
+                println!("Error sending message: {:?}", why);
+            }
+        }
+    }
+
+    async fn ready(&self, _: Context, ready: Ready) {
+        println!("{} is connected!", ready.user.name);
+    }
+}
+#[tokio::main]
+async fn main() {
+    let token = env::var("DISCORD_TOKEN")
+    .expect("Expected a token in the environment");
+
+    let mut client = Client::new(&token)
+    .event_handler(Handler)
+    .await
+    .expect("Err creating client");
+
+    if let Err(why) = client.start().await {
+        println!("Client error: {:?}", why);
+    }
+}
+ #+END_SRC

@@ -3,4 +3,4 @@
 #+LAST_MODIFIED: [2020-09-29 Tue 10:31]
 #+HUGO_BASE_DIR: ~/Development/matiasfha/braindump.matiashernandez.dev
 
- - tags ::
+ - tags :: [[file:20200927000418-javascript.org][Javascript]]

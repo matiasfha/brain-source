@@ -1,19 +1,37 @@
 #+title: Clojure
 #+HUGO_BASE_DIR: /Users/matias/Development/matiasfha/braindump.matiashernandez.dev/
 - tags:: [[file:20200927000334-programing_languages.org][Programing Languages]]
-* Nacido el 2007, actualmente mantenido por Cognitect con 126 contributors formales
-* Un lenguaje robusto, practico y rápido con caracterísiticas para forma una herramienta simple, coherente y poderosa.
-* De propósito general,
-* Interoperabilidad con Java
-* Es un dialecto de Lisp y comparte la filosofía codigo-como-datos
-** Esto se conoce como homoiconocidad. El propio programa ecrito puede ser manipulado como data usando el propio lenguaje.
-* Funcional
-* Estructuras de datos inmutables
-* Polimorfismo
-* Soporta Macros
-** Provee la oporatuniad de extender el lenguaje
-* Confiable and Battle tested: Utilizado por Citibank, Simple, Amazon, Netflix, etc.
-* Se ejecuta en la JVM
-* Gran comunidad, un ejemplod ello es el project [[https://github.com/athensresearch/ClojureFam][ClojureFam]] del que participo para aprender Clojure
-* Tiene dos conferencias anuales US para un total de entre 7 y 8 conferencias mundiales (incluyendo una remota)
-** También puede ser usado en el browser con Clojurecript, un compilador de Clojure que crea código JS
+- Nacido el 2007, actualmente mantenido por Cognitect con 126 contributors formales
+- Un lenguaje robusto, practico y rápido con caracterísiticas para forma una herramienta simple, coherente y poderosa.
+- De propósito general,
+- Interoperabilidad con Java
+- Es un dialecto de Lisp y comparte la filosofía codigo-como-datos
+  + Esto se conoce como homoiconocidad. El propio programa ecrito puede ser manipulado como data usando el propio lenguaje.
+- Funcional
+- Estructuras de datos inmutables
+- Polimorfismo
+- Soporta Macros
+  + Provee la oporatuniad de extender el lenguaje
+- Confiable and Battle tested: Utilizado por Citibank, Simple, Amazon, Netflix, etc.
+- Se ejecuta en la JVM
+- Gran comunidad, un ejemplod ello es el project [[https://github.com/athensresearch/ClojureFam][ClojureFam]] del que participo para aprender Clojure
+- Tiene dos conferencias anuales US para un total de entre 7 y 8 conferencias mundiales (incluyendo una remota)
+  + También puede ser usado en el browser con Clojurecript, un compilador de Clojure que crea código JS
+
+* [[file:20201008224623-why_clojure.org][Why Clojure]]
+
+* Hows
+
+- clj-http.client/get HTTP library using the Ring protocol for Clojure HTTP server applications
+  + si se usa `{:async? true}` returnará un [future](https://clojuredocs.org/clojure.core/future)
+
+*** Code Organization
+- source: https://www.braveclojure.com/organization/
+
+  - use namespaces, use the macro `ns` to create a  new one
+  - create a file inside a new folder and use the folder name as part of the namespace like `(ns project.folder.file)`
+  - then require and alias the new namespace like
+    #+BEGIN_SRC clojure
+    (use '[the-divine-cheese-code.visualization.svg :as svg])
+    (= svg/points points)
+    #+END_SRC

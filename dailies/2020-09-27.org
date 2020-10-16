@@ -45,3 +45,9 @@ Todos trabajamos de maneras diferentes por lo que no todas las técnicas de mane
 - Understimator: Siempre cree que una tarea tomará menos que lo realmente posible, rara vez logra los optimistas objetivos. Deadlines son su mayor problema
 - Bombero: Realmente un multitasker que trata de resolver todo a cada instante. Se la pasa apagando incendios. Siempre busca sentirse ocupado. Esta al borde del burnout.
 - Perfeccionista: La inhabilidad para terminar una tarea viene dada por la idea de que siempre falta algo, que todo debe ser perfecto
+
+
+*[[file:../20200930225204-time_management_techniqueees.org][Time Management Techniques]]
+:PROPERTIES:
+:ID:       cf883577-685f-45d2-a84e-875a69e20c06
+:END:

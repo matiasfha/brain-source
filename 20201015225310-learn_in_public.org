@@ -1,0 +1,110 @@
+#+TITLE: Learn in Public
+#+CREATED: [2020-10-15 Thu 22:53]
+#+LAST_MODIFIED: [2020-10-15 Thu 22:53]
+#+HUGO_BASE_DIR: ~/Development/matiasfha/braindump.matiashernandez.dev
+
+- tags::
+
+De que hablamos cuando decimos *Aprender en Público* (Learn in Public)?
+
+- [Show Your Work](https://amzn.to/309BJxK) By Austin Kleon.
+- Dos formas de aprender
+  + En silencio
+  + Mostrar el proceso
+
+Aprender en publico hace referencia al segundo punto, mostrar el proceso y progreso del aprendizaje.
+- Crea responsabildiad
+- Feedback loop
+- Puedes ver tu progreso
+- Comunidad
+
+ #+BEGIN_QUOTE
+“By letting go of our egos and sharing our process, we allow for the possibility of people having an ongoing connection with us and our work, which helps us move more.” — Show Your Work! by Austin Kleon
+ #+END_QUOTE
+
+* Wins
+- Lo que es obvio para ti puede ser valorable para otros
+- Al compartir información de tu proceso puedes mejorar otras habilidades como escribir, hablar, comunicar en general
+- Para progresar hay que ponerse en el escenario.
+  #+BEGIN_QUOTE
+...the only way to find your voice is to use it
+  #+END_QUOTE
+- Obtienes opiniones.
+- Ayudas a otros
+- Personal brand
+
+* Privado
+- El sistema educativo nos ha entrenado para aprender en privado, tarea, escuela, califaciones, todo para ti mismo, tu conocimiento se queda contigo.
+- El existo se define por realizar este ciclo de buena manera, mejor que otros.
+- Te pone en modo competencia con tus pares, y no se comparten secretos en una competencia
+
+- Tech es diferente, charlas, open sources, blogs. Sin embargo la gran mayoría de developers se guardan lo que aprenden para si mismos. La mayoría consume contenido técnico pero no crea.
+- Quizá el 99% de los desarrolladores sigue este proceso para construir su aprendizaje y su carrera, pero es complejo encontrar evidencia real de su carrera más allá de sus abultados y lineales CV.
+- Cuando les toca buscar trabajo, no hay networking disponible, comezar de 0
+
+* Publico
+- Open Source Knowledge
+- Creas un registro público de tus intereses, objetivos y progresos
+- Se crea networking, comunidad, mentores, pares, followers
+- Comunidad permite navegar las aguas del aprendizaje de forma más certera, rápida, menos confusa.
+- Tu red puede ser muy amplia, con personas de todo tipo de roles?
+- Job hunting puede ser más fácil, incluso puede que te busquen por que tu trabajo es conocido.
+- No es altruísmo.
+- Es la forma más rápida de aprender, crear tu red y construir tu carrera.
+- Lo haces por ti,ergo, es sostenible, lo bueno es que además la comunidad se ve beneficiada
+- Obviamente no todo es público
+
+* Como empezar?
+- Escribe blogs, demos, comparte tu código
+- Da una charla en una meetup, o de forma interna en tu trabajo
+- Participa de comunidades
+- Crea videos,
+- Newletter, podcasts
+
+Crea lo que te hubiese gustado encontrar cuando estabas aprendiendo.
+Documenta tu proceso y compartelo
+
+Recuerda no buscas fama, followers,, retweets, etc, estos son un efectos secundario de tu proceso, no te sientas mal si no lo consigues.
+
+El principal beneficiario de todo serás tu mismo en el futuro
+
+En un principio, no tendrás presión ni expectativas (ni haters) de otros, Es tiempo de experimentar.
+Toma tu tiempo para construir el [[file:20201015232018-habito.org][Habito]], construye tu plataforma, tu medio, que te sea confortable crear contenido en el formato que más te guste.
+** Miedo
+No te preocupes cuando erras, continua publicando, incluso si sientes que no es perfecto. No busques la perfección.
+No asumas que sabes todo, ponte tu gorro de newbbie y continua aprendiendo.
+
+No todas las criticas tienen el mismo valor, decide cual critica es útil y cual no. La crítica puede ser un gran profesor, pero si es abusivo.. no importa, bloqueado.
+
+
+No intentes no errar en público, guarda tu ego. Errar es parte del proceso y el perfeccionismo solo te hará lento en aprender y en publicar. Es mejor entrenar la habilidad de recuperarse al errar. Esto acelera tu proceso de aprendizaje, ya no temes a la caída.
+
+
+** Enseña para aprender
+
+#+BEGIN_QUOTE
+“If you can’t explain it simply, you don’t understand it well enough.” - Albert Einstein
+#+END_QUOTE
+Una gran forma de realmente saber si entiendes algo es cuando eres capaz de enseñarlo a otros. para poder enseñar te vez forzado a revisar tus ideas y conceptos, estructurar tu conocimiento, y pensar en esas preguntas que quizá ya olvidaste hacer. Sacarte la venda del experto y mirar el conocimiento como beginner.
+
+
+
+Learn in Public no es un concepto nuevo, es un proceso que muchos han utilizado, quizá con otros nombres, como [Explicit Learning](https://medium.com/@reidhoffman/those-who-teach-can-do-98a30e9a74ea). De hecho, si has escuchado de alguien en tu proceso de aprendizaje es por que ellos de una u otra forma publicaron lo que sabían.
+
+** Diferencia entre creador y consumidor
+- Daily goal do something
+- Documentar lo que hiciste
+- Decide que harás antes de iniciar tu trabajo
++ Crea y consume en diferentes dispositivos: Computadores son para crear, no consumir
+- Conoce tu audiencia. No puedes crear para todos
+- Calendariza tus momentos de creación. Maker [[roam:Time Management]
+- Enseña lo que acabas de aprender
+- Crear valor no spam
+- Own your content
+- Consistencia
+
+
+* Links
+- Shu Omi: https://www.youtube.com/watch?v=JpzTYxzcF8I Why You Should Learn In Public
+- Kent C. Dods: https://kentcdodds.com/blog/intentional-career-building Intentional Career Building
+- Cory House: https://www.bitnative.com/2013/12/14/programming-your-brain-the-art-of-learning-in-three-steps/ Programming Your Brain: The Art of Learning in Three Steps

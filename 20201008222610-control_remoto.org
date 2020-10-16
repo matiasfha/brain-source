@@ -1,0 +1,7 @@
+#+TITLE: Control Remoto
+#+CREATED: [2020-10-08 Thu 22:26]
+#+LAST_MODIFIED: [2020-10-08 Thu 22:26]
+#+HUGO_BASE_DIR: ~/Development/matiasfha/braindump.matiashernandez.dev
+
+- tags::
+* Control Remoto

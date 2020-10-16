@@ -4,9 +4,8 @@
 #+HUGO_BASE_DIR: ~/Development/matiasfha/matiashernandez.dev
 - tags:: [[file:20200920112816-rust.org][Rust]] [[file:20200920112829-elm.org][Elm]] [[file:20200922032244-clojure.org][Clojure]] [[file:20200920163655-elixir.org][Elixir]]
 
-
 * Nueva idea para una charla: Overview de Rust y Elm como lenguajegs modernos
-** https://youtu.be/ukVqQGbxM9A
+* https://youtu.be/ukVqQGbxM9A
 
 
 * Podcast Outline [4/4]

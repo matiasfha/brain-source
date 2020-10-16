@@ -1,0 +1,25 @@
+#+TITLE: Styled Components
+#+CREATED: [2020-10-08 Thu 00:01]
+#+LAST_MODIFIED: [2020-10-08 Thu 00:01]
+#+HUGO_BASE_DIR: ~/Development/matiasfha/braindump.matiashernandez.dev
+
+- tags:: [[file:20200929103149-react.org][React]] [[file:20201001102454-react_native.org][React Native]]
+
+- sources: https://flaviocopes.com/styled-components/
+            https://www.robinwieruch.de/react-styled-components
+            https://dev.to/christopherkade/styled-component-what-why-and-how-5gh3
+
+
+- Styled-components es una variante o implementación de el método conocido como CSS-in-JS
+
+- CSS-in-JS es un approach que abstrae el modelo CSS a nivel de componente en vez de todo el documento. La idea es que CSS pueda ser "scoped" a un componente en especifico. Algunos beneficios
+
+  - Reduce the number of HTTP Requests
+  - Styling Fragmentation: No compatibility issues
+
+
+Styled-components es una implementación de esta idea, o una API, hay otras que sigen la misma estructura como Emotion.sh
+Te permite escribir CSS en tus componentes sin peocuparte por colisiones de nombre creando css "scoped" al componente.
+
+
+* Why

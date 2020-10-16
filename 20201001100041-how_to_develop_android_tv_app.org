@@ -1,0 +1,25 @@
+#+TITLE: Article: How to develop android tv app
+#+CREATED: [2020-10-01 Thu 10:00]
+#+LAST_MODIFIED: [2020-10-01 Thu 10:00]
+#+HUGO_BASE_DIR: ~/Development/matiasfha/braindump.matiashernandez.dev
+
+ - tags::[[file:20201001095948-android.org][Android]]
+ - source :: https://medium.com/@halilozel1903/how-to-develop-android-tv-app-5e251f3aa56b
+
+
+* What is android TV?
+:PROPERTIES:
+:ID:       bf12d266-4aa2-4aa8-9f86-41b81496f4ca
+:END:
+Is an Smart TV platform by Google. Works with Android 5.0 and above. Can run apps from the Play Store.
+Apps are developed by using the Android SDK.
+
+An app can be build with [[file:20201001102454-react_native.org][React Native]] or by using [[file:20200920163407-kotlin.org][Kotlin]]
+
+** Development
+For Development purposes [Android Studio](https://developer.android.com/studio) is required. With it a simulator can be run.
+- Download Android Studio
+- on AS, Open Android Virutal Device Manager
+- Create a new Virtual Device
+- Follow instructions to add a new TV device
+- Click on Start button

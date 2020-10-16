@@ -1,0 +1,56 @@
+#+TITLE: Article: How to nvmrc
+#+CREATED: [2020-10-09 Fri 14:47]
+#+LAST_MODIFIED: [2020-10-09 Fri 14:47]
+#+HUGO_BASE_DIR: ~/Development/matiasfha/braindump.matiashernandez.dev
+
+ - tags:: [[file:20201009144721-node.org][Node]]
+ - source :: https://medium.com/@faith__ngetich/locking-down-a-project-to-a-specific-node-version-using-nvmrc-and-or-engines-e5fd19144245
+
+
+ Cuando trabajas con Node hay muchas cosas que puede variar de un ambiente a otro, una de ellas es la versión de Node instalada en cada máquina, esto, en algunos casos puede traer problemas. Pero, es posible definir o "lock down" una versión específica de node.
+
+Una forma de lograr este proceso de manera sencilla es utilizando [*nvm*](https://github.com/nvm-sh/nvm) (Node Version Manager).
+
+** NVM
+*nvm* es un manejador de versione para node, te permite mantener múltiples versiones de node en tu máquina y utilizar la que requieras para cada project.
+
+Instalar es sencillo, tan solo debes ejecutar el script de instalación
+#+BEGIN_SRC bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
+#+END_SRC
+
+Este escript, clona el repositorio de nvm dentro del directorio `~/.nvm` y agregar alguna lineas a tu archivo de perfil `.bash_profile`, `.zshrc`, `.profile`, etc.
+
+El manual de uso te puede ayudar en caso de que tenga algún problema: https://github.com/nvm-sh/nvm
+
+** Usando .nvmrc
+
+Si lo que necesitas es definir y *fijar* la versión de node para diferentes proyectos, puedes hacer uso del archivo `.nvmrc`.
+
+Este archivo, es un archivo de configuración que le indica a `nvm` que versión de node se requiere para este proyecto.
+
+Simplemente crear este archivo y agrega la versión que quieres definir
+#+BEGIN_SRC bash
+echo "12.15.0" > .nvmrc
+#+END_SRC
+
+Después de eso sólo debes ejecutar algunos comandos extra para que nvm instale lo necesario
+#+BEGIN_QUOTE
+🚨 estos comandos son ejecutados desde el directorio del proyecto
+#+END_QUOTE
+
+#+BEGIN_SRC bash
+nvm use
+nvm install
+nvm exec
+#+END_SRC
+
+Listo, ahora tu proyecto tiene la versión de node definida, no olvides agegar el archivo `.nvmrc` a tu control de versiones
+
+#+BEGIN_EXPORT bash
+git add .nvmrc
+git commit -am 'Added nvmrc'
+git push origin <your-branch>
+#+END_EXPORT
+
+Y ahora a continuar con tu maravilloso proyecto!

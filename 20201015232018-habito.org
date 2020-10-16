@@ -1,0 +1,6 @@
+#+TITLE: Habito
+#+CREATED: [2020-10-15 Thu 23:20]
+#+LAST_MODIFIED: [2020-10-15 Thu 23:20]
+#+HUGO_BASE_DIR: ~/Development/matiasfha/braindump.matiashernandez.dev
+
+- tags::

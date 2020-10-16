@@ -1,0 +1,55 @@
+#+TITLE: Why Clojure
+#+CREATED: [2020-10-08 Thu 22:46]
+#+LAST_MODIFIED: [2020-10-08 Thu 22:46]
+#+HUGO_BASE_DIR: ~/Development/matiasfha/braindump.matiashernandez.dev
+
+- tags:: [[file:20200922032244-clojure.org][Clojure]]
+- sources: https://blog.developer.atlassian.com/why-clojure/
+  https://clojure.org/about/rationale
+  https://medium.com/@ertu.ctn/why-clojure-seriously-why-9f5e6f24dc29
+  https://dzone.com/articles/why-clojure-4-tech-reasons
+  https://dev.to/kspeakman/why-clojure-289k
+  https://blog.cleancoder.com/uncle-bob/2019/08/22/WhyClojure.html
+
+ 
+- It targets the JVM
+  + The JVM has had a couple0 of decades of manpower poured into making it fast; And it is damn fast.
+  + There is a plethora of robust libraries in an extensive range of problem domains. Focus on the problem you’re trying to solve rather than re-inventing the wheel.
+  + The JVM is widely used across both small and large businesses; being on the JVM means much greater adoption.
+
+Well JVM is Java:
+
+#+BEGIN_QUOTE
+> Well, Java comes with its own set of trade-offs. It lacks many features other platforms take for granted – such as lambdas, though that’s been rectified in Java 8. Its type system is overly restrictive and its type inference is less than ideal. Java also doesn’t have data structure literals, making it even more verbose.
+
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+“Lisp isn’t a language, it’s a building material.” — Alan Kay
+#+END_QUOTE
+
+- Is extremely flexible
+- taking an opinionated data driven approach to programming
+- Clojure macros on the other hand are a way to manipulate Clojure code itself – yes you can transform the AST! – including the ability to control when and if things get evaluated at all.
+
+#+BEGIN_QUOTE
+"Within a couple weeks of learning Lisp I found programming in any other language unbearably constraining." — Paul Graham, Road to Lisp
+
+#+END_QUOTE
+- Is REPL Development Driven
+
+#+BEGIN_QUOTE
+“Choose immutability and see where it takes you” — Rich Hickey, Clojure creator
+#+END_QUOTE
+
+- Functional Programming
+  + Immutability by default
+    - immutable data-structures are thread-safe by default, making developing concurrent software simpler;
+    - you get history with minimal effort;
+    - there is no need to worry about other code paths changing your data. It simply won’t happen;
+- ships with many concurrency utilities
+- ClojureScript: https://www.youtube.com/watch?v=KZjFVdU8VLI
+
+- *Simplicity* (not easiness) Very plain sintax and structure:
+  Open parenthesis, write the name of a function write the arguments of the function close parenthesis. Done
+- Java interoperability

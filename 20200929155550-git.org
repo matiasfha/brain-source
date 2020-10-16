@@ -1,7 +1,6 @@
 #+TITLE: Git
 #+CREATED: [2020-09-29 Tue 15:55]
 #+LAST_MODIFIED: [2020-09-29 Tue 15:55]
-#+HUGO_BASE_DIR: ~/Development/matiasfha/brain
-#+HUGO_SECTION: notes
+#+HUGO_BASE_DIR: ~/Development/matiasfha/braindump.matiashernandez.dev
 
  - tags ::

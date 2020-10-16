@@ -1,0 +1,106 @@
+#+TITLE: Post: comenzando con react native
+#+CREATED: [2020-10-05 Mon 16:40]
+#+LAST_MODIFIED: [2020-10-05 Mon 16:40]
+#+HUGO_BASE_DIR: ~/Development/matiasfha/braindump.matiashernandez.dev
+
+- tags:: [[file:../20200929103149-react.org][React]] [[file:../20201001102454-react_native.org][React Native]] [[file:../20201001095948-android.org][Android]]
+
+ Esta semana he comenzado un nuevo proyecto junto a un nuevo equipo en [Modus Create](https://moduscreate.com). Una nueva intersante aventura creando una nueva aplicación utilizando React pero esta vez se trata de una aplicación nativa para Android, es decir, utilizando React Native.
+
+  * ¿Qué es React Native?
+
+   React Native es, actualmente, un framework bastante popular que permite crear aplicaciones nativas utilizando Javascript, aplicaciones nativas para Android e iOS.
+
+   Fue inicialmente publicado por Facebook el 2015 y en solo unos pocos años se convirtió en una solución importante a la hora de construir aplicaciones mobiles.
+
+   Básicamente React Native utiliza el poder de React para "compilar" o más bien "transpilar" código Javascript a código nativo de cada plataforma. La principal diferencia entre React y React Native es que React Native en realidad utiliza React pero sobre una nueva plataforma y en ez de utilizar primitivas del DOM (provistas por react-dom) utiliza primitvas para apuntar a los dispositivos.
+
+    + Primivitass: En vez de divs y spans (primitivas provistas por react-dom) se usa `<View>`, `<Text>`, etc
+
+      La idea de este framework es permitir el desarrollo multiplataforma de aplicaciones, permite combinar las "mejores" partes de el desarrollo de aplicaciones nativas y el flexible uso (y conocimiento) de Javascript.
+
+* ¿Cómo comenzar con React Native?
+Lo primero será preparar tu ambiente de desarrollo, para esto tenemos dos opciones (al menos dos principales), utilizar [Expo](http://expo.io) o directamente la herramienta de React Native. En general Expo se recomienda como herramienta de inicio.
+R
+Primero, debemos instalar expo, para eso en una terminal instalamos con node (ps: Requieres Node 12 LTS o superior)
+#+BEGIN_SRC bash
+npm install -g expo-cli
+#+END_SRC
+
+Expo permite ejecutar tu aplicación en un dispositivo físico sin la necesidad de configurar nada más, pero si quieres utilizar los simuladores de iOS o Android necesitaras instalar algunas herramientas extra.
+
+** iOS Simulator
+Para ejecutar tu app en un simulador de iOS necesitas, primero un Mac, luego instalar Xcode, la forma más simple de hacerlo es instalado desde la [Mac App Store](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) eso también instalar el simulador de iOS.
+*** Command Line Tools
+También será necesario instalar las herramientas de linea de comando, para esto simplemente abre XCode, selecciona preferencias (CMD + ,) y en la pestaña "Locations" selecciona desde el dropdown la versión más reciente.
+#+CAPTION: Preferencias de XCode
+#+NAME: fig:Preferencias-XCode
+[[https://reactnative.dev/docs/assets/GettingStartedXcodeCommandLineTools.png]]
+
+*** iOS Simulator
+Nuevamente en la preferencias de Xcode, selecciona la pestaña *Componentes*. Seleciona el simulador que deseas.
+
+Finalmente es neceario instalar [Cocoapods](https://cocoapods.org/), esta es una herramiente escrita en Ruby que te permitirá manejar dependencias. Por defecto tu SO ya tiene ruby instalado, por lo que solo debes abrir la consola y ejecutar
+#+BEGIN_SRC bash
+sudo gem install cocoapods
+#+END_SRC
+
+** Android emulator
+Para ejecutar tu aplicación el el simulador de Android necesitarás
+- node
+- watchman
+- el JDK
+- Android Studio
+
+ Anroid Studio es necesario para poder utilizar las herramientas de compilado de Android, puedes usar el editor de tu gusto para desarrollar.
+
+ Lo primero será instalar node y watchman, lo más seguro es que puede saltarte este paso ya que probablemente ya tienes esto instalado
+
+ #+BEGIN_SRC bash
+brew install node
+brew install watchman
+
+ #+END_SRC
+*** Java Development Kit
+El JDK provee herramientas para el desarrollo de aplicaciones Java, Android utiliza estas herramientas en el proceso de compilar y construir el paquete de la aplicación.
+Se recomienda utilizar Hoombrew para instalar.
+#+BEGIN_SRC bash
+brew cask install adoptopenjdk/openjdk/adoptopenjdk8
+#+END_SRC
+*** Android development env
+Esta parte puede ser algo tediosa pero no es compleja.
+- Instala Android Studio descargandolo desde [aqui](https://developer.android.com/studio/index.html)
+  Y en el wizard asegurate de que los siguiente checkbox estén activados
+  - Android SDK
+- Android SDK Platform
+  - Android Virtual Device
+    - Performance (Intel HAXM)
+Después de que este parte finalice debes instalar el Android SDK, Android Studio instala el último SDK por defecto, pero para react-native requieres \Android 10 (Q)\. Asegurate que este instalada esa versión. Abre Android Studio, click en "Configurar" y selecciona *SDK Manager*.
+En este ventana, seleciona las plataformas que desea, revisa que Android 10 (Q) esta seleccionado, expande este elemento de la lista y asegurate que también esten seleccionadas
+- Android SDK Platform 29
+- Intel x86 Atom_64 System Image or Google APIs Intel x86 Atom System Image
+
+Finalmente click en "Applicar".
+
+El último paso en configurar las variables de ambiente para ANDROID_HOME
+Edita tu archivo `.bash_profile` o `.bashrc` o `.zprofile` o `.zshrc`, dependiendo de la shell que este utiliznado y agrega:
+#+BEGIN_SRC bash
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+#+END_SRC
+
+* Crear una aplicación!
+Ya está todo listo para crear tu primera aplicación, abre una consola y ejecuta
+#+BEGIN_SRC bash
+expo init MiNuevaAppRN
+
+cd MiNuevaAppRN
+npm start
+#+END_SRC
+
+Esto crear un proyecto expo con todo lo necesario para ejecutar la app (algo así com `create-react-app` para la web) y con `npm start` iniciar el servidor de desarrollo.
+
+Y ya está ahora, se abrirá una ventana en tu navegador por defecto mostrando la vista de Metro Bundler, que es el empaquetador de expo y te permitirá ejecutar tu app en el navegador, en alguno de los simuladores o utilizar el código QR para ejecutar la app en tu dispositivo móvil utilizando la app Expo.

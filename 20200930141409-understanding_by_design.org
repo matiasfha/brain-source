@@ -1,0 +1,6 @@
+#+TITLE: Understanding By Design
+#+CREATED: [2020-09-30 Wed 14:14]
+#+LAST_MODIFIED: [2020-09-30 Wed 14:14]
+#+HUGO_BASE_DIR: ~/Development/matiasfha/braindump.matiashernandez.dev
+
+  - tags::

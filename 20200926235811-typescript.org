@@ -11,6 +11,7 @@
 :END:
 * Extend Javascript by adding types
 - Is a super set of Javascript that has optional typing and compiles to plain Javascript
+- Es un lenguaje compilado o transpilado a JS
 Es javascript con algunas funciones extras incluyendo tipos estáticos de forma opcional
 Esto permite
 - evitar errores tipo "undefined is not a function"
@@ -22,13 +23,16 @@ Esto permite
 - Se puede definir Typescript como un Linter
 - No es neceario saber nada en particular para comenzar con TS
   + Tipos son opcionales en TS
-  + Todo el JS es TS válido
+  + Todo el JS es TS válido  
 * Types
 - describing in our code how we plan to use our data
 - from simple types like Number and String to complex structures perfectly modeled for our problem domain.
 - [[file:20200927001713-tipos_estaticos_vs_tipos_dinamicos.org][Tipos estaticos vs tipos dinamicos]]
 - *Typescript te fuerza a pensar más en tus datos
 *** Evita que se introduzcan variables indefinidas
+:PROPERTIES:
+:ID:       057a4e6b-f7a4-4c7e-a458-4f62a670cb81
+:END:
 - Evitar coerción de datos (como la suma de numeros con strings)
 - Evitar operaciones en tipos erroneos, como hacer "trim" en un número.
 - Los tipos estáticos invitan a crear tipos personalizados
@@ -36,6 +40,7 @@ Esto permite
 Los tipos sirven como documentación algo que los editores aprovechan para mostrar información de los métodos y variables mientras se desarrolla
 - Tiene varios tipos básicos como: Boolean, Number, String, Array, Typle, etc
 - Algunos no existen en JS: mas info: https://www.typescriptlang.org/docs/handbook/basic-types.html
+Lo tipos en Typescript pueden ser implicitos o explicitos. SI no lo defined expplicitamente el compilador lo inferirá. Pero sin embargo, escribirlos explicitamente trae beneficios de mantenibilidad.
 *** Any & Unknown:
 **** Any para "todo tipo": Sirve como escape-hatch
 ***** Normalmente usado para modelar datos de librerias externas sin tipar
@@ -54,3 +59,60 @@ Permite a la variable tomar uno de varios tipos
     #+begin_src typescript-mode
 const result: string | undefined = undefined
     #+end_src
+* Razones para elijir Typescript
+
+** Typescript es confiable
+En contrasete con JS, TS es confiable y fácil de refacrorizar permitiendo evadir errores.
+Los tipos eliminan la mayoría de los errores bobos y generan un rápido feedback para arreglar esos pequeños errores.
+** TS es explicitos
+AL utilizar tipos explicitos podemos enfocar nuestra atención en como el sistema esta construido y como sus diferentes partes interactuan.
+Importante en proyectos grande..
+Permite abstracciones más seguras
+** TS y JS son "casi" intercambiables
+
+TS es un superset de JS por lo que se puede utilizar todo el ecosistem JS con TS.
+Ademá la mayoría de las librarias más populares o estan esscritas en TS o distribuyen tipos via [Definetily Typed](https://github.com/DefinitelyTyped/DefinitelyTyped) un repo que contiene cientos de tipos para las librarias más utilizadas.
+Tamibén esto permite que se pueda agregar TS de apoco, o que si no puedes escribir algo con TS simplemente lo hagas con JS como scape hatch
+* Cons
+- No es un cabio directo. Tomar un equipo o un proyecto y comenzar a escribir TS idiomático no es rápido. Hay una leve curva de aprendizaje.
+- En el corto pplazo puede tomar tiempo adaptarse.
+  - SI es un proyecto Open Source necesitarás que los contributors sepan TS 
+* TODO Quickstart
+- instalar el compilador de TS con `npm`
+  `npm install -g typescript`
+  Una vez instalado podrás ejecutar `tsc -v` en tu consola.
+- Configurar tu editor
+** Lo básico
+Lo único necesario para comenzar es el compilador y un archivo typescript.
+Crea un archivo `test.ts`
+#+BEGIN_SRC typescript
+function delay(milliseconds: number, count: number): Promise<number> {
+    return new Promise<number>(resolve => {
+            setTimeout(() => {
+                resolve(count);
+            }, milliseconds);
+        });
+}
+
+// async function always return a Promise
+async function dramaticWelcome(): Promise<void> {
+    console.log("Hello");
+
+    for (let i = 0; i < 5; i++) {
+        // await is converting Promise<number> into number
+        const count: number = await delay(500, i);
+        console.log(count);
+    }
+
+    console.log("World!");
+}
+
+dramaticWelcome();
+#+END_SRC
+
+Como vez eso se parece mucho a Javascript pero tiene esos "extraños" `:` que definen el tipo de la variable, argumento o función.
+Para ejecutar esto, primero debes compilarlo y luego ejecutar con node
+#+BEGIN_SRC bash
+tsc test.ts
+node test.js
+#+END_SRC

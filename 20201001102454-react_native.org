@@ -1,0 +1,65 @@
+#+TITLE: React Native
+#+CREATED: [2020-10-01 Thu 10:24]
+#+LAST_MODIFIED: [2020-10-01 Thu 10:24]
+#+HUGO_BASE_DIR: ~/Development/matiasfha/braindump.matiashernandez.dev
+
+- tags:: [[file:20200929103149-react.org][React]]
+
+* Qué es?
+#+BEGIN_QUOTE
+Learn once, write anywhere
+#+END_QUOTE
+
+Permite creare aplicacones nativas para Android e iOS usando React.
+- Basicamente es un "compilador" que permite escribir con Javascript ofreciendo algunas primitivas para apuntar a los devices.
+  + Primivitass: En vez de divs y spans (primitivas provistas por react-dom) se usa `<View>`, `<Text>`, etc
+- Se pueden create componentes para una u otra plataforma de forma especifica o generales.
+
+* Setup
+- Hombrew and node son requirements
+- install watchman `brew install watchman`: Permite detectar cambios en el código y automáticamente ejecutar un nuevo build y actualizar el device/simulator
+** For Android
+- installar JRE y JDK
+  #+BEGIN_SRC bash
+    brew tap AdoptOpenJDK/openjdk
+    brew cask install adoptopenjdk8
+  #+END_SRC
+- instalar React Native
+  #+BEGIN_SRC bash
+npm install -g react-native-cli
+  #+END_SRC
+*** Setup Android Studio
+- Ir a Confgure > SDK Manager
+- Appearance & Behavior -> System Settings -> Android SDK check the bx of latest version from Hide Obsolete Packages
+- check box below in Show package details
+  + Android SDK platform 28
+  + Intel x86 Atom_64 Sytem Image or Google APIs Intel x86 Atom Sytem image
+- Setup env
+#+BEGIN_SRC bash
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+#+END_SRC
+- Create the virtual device
+** For Ios
+- instalar Xcode
+- instalar cocoapods: Permite manejar dependencias
+#+BEGIN_SRC bash
+sudo gem install cocoapods
+#+END_SRC
+
+* First App
+- run `react-native init first-app --template typescript` creará un nuevo proyecto con Typescript
+- run  `react-native run-android`
+  + Puede que ocurran errors conocidos
+    - Ask to add local.properties.files
+      crear un archivo local.properties dentro de `android` con
+      `sdk.dir = ~/Library/Android/sdk`
+    - Ask to add keystroke
+      Dentro de `android/app` ejecutar
+      #+BEGIN_SRC bash
+keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000
+      #+END_SRC

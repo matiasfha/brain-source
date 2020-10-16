@@ -30,4 +30,24 @@ Que quieren los stackholders: Algo bueno y pronto.
   + Lo que es verdad para la JVM o el browser lo es para Clojure (Pero a la hora de desarrollar Clojure ofrece más valor )
   + Es suficientemente rápido en la JVM, pero en el browser tiene una gran performance utilizando[[file:20200929103110-om.org][ Om]]
 
-** How
+** How?
+:PROPERTIES:
+:ID:       d2161fcd-bfce-48bb-ba62-f8b012dcb819
+:END:
+ - Data orientation
+ - Simplicity: Opossite of complexity, not "easy"
+   + Cosas complejas son enredades, las cosas simples no.,
+#+BEGIN_QUOTE
+What matters is not just what a programming language makes possible, but what it makes practical and idiomatic
+#+END_QUOTE
+- Clojure se esfuerza en que "Data processing" sea idiomatico
+  + Todo app hace procesamiento de datos
+  + Data es información inumtable
+  + Los lenguajes "fiddle around". Hacen cosas que complejizan la representación de los datos (información inmutable)
+  + OOP es mas sobre el programa en si mismo en vez de ser sobre los datos
+- Clojure embraces data
+  + Data es first class
+  + Data literals
+  + Code is data
+  + La mayoría de las funciones retornan datos
+  + Información es representada como "plain data"

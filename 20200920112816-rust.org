@@ -29,3 +29,6 @@
 *** no data races: El compilador se asegura que solo un valor/element mute a la vez para evitar problemas de escritura/lectura por multiples threads.
 ** Esto es importante ocmo identidad: Rápido para competir con C/C++ pero mas seguro
 * If it compiles, it usually works.
+:PROPERTIES:
+:ID:       471dd374-a13a-452f-aad9-722b5a71a56d
+:END:

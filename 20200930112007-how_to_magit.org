@@ -1,0 +1,20 @@
+#+TITLE: How to Magit
+#+CREATED: [2020-09-30 Wed 11:20]
+#+LAST_MODIFIED: [2020-09-30 Wed 11:20]
+#+HUGO_BASE_DIR: ~/Development/matiasfha/braindump.matiashernandez.dev
+
+- tags:: [[file:20200930112018-emacs.org][Emacs]]
+
+Magit es un cliente [[file:20200929155550-git.org][Git]] GUI para emacs y es fantástico.
+
+- =SPC g g= abrirá el buffer de status desde dondo todo se hace
+- =?= mostrará la ayuda
+- =s= para agregar un archivo al stage
+- =S= para agregar todos los cambios al stage
+- =c c= para hacer un commit. Escribir y luego =C-c C-c= para guardar y salir
+- =b s= creara un branch y spinoof desde el actual branch con todos los commits
+- =b b= cambiar de branch
+- =P=  para push
+- =l l= para mostrar el log history
+- navegar hasta el primer commit (HEAD) y presionar =r i= para selecionar un rebase interactive
+- desde este buffer =s=  para squash =C-c C-c= para guardar

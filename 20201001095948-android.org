@@ -1,0 +1,6 @@
+#+TITLE: Android
+#+CREATED: [2020-10-01 Thu 09:59]
+#+LAST_MODIFIED: [2020-10-01 Thu 09:59]
+#+HUGO_BASE_DIR: ~/Development/matiasfha/braindump.matiashernandez.dev
+
+- tags::
